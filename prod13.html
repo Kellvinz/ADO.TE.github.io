@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Compra</title>
+    <link href="../css/detalhes.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./index.html#2">Sobre nós</a></li>
+                    <li><a href="./index.html#3">Onde nos encontrar</a></li>
+                    <li><a href="./index.html#4">Contato</a></li>
+                    <li><a href="./catalogo.html">Produtos</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="header-buttons">
+            <a href="#" class="user"><i class="fa-solid fa-circle-user"
+                    style="cursor: pointer; text-decoration: none;"></i></a>
+            <a href="./carrinho.html" class="cart"><i class="fa-solid fa-cart-shopping"
+                    style="cursor: pointer; text-decoration: none;"><p class="circle"></p></i></a>
+        </div>
+    </header>
+
+    <section class="catalog-container">
+        <div class="catalog">
+            <div class="catalog-header">
+                <div class="search">
+                    <p style="font-weight: bold;">
+                        O que está procurando:
+                    </p><input type="search">
+                    <i class="fa fa-magnifying-glass"
+                        style="background-color:#FFFFFF; padding: 7px 10px;border-top-right-radius: 10px; border-bottom-right-radius: 10px;"></i>
+                </div>
+                <button>Ração</button>
+                <button>Petisco</button>
+                <button>Acessórios</button>
+                <button>Outros</button>
+            </div>
+    </section>
+
+
+    <div class="container">
+        <div class="info">
+            <img src="../img/comedouro.png" alt="Produto">
+            <div class="selo">
+                <img src="../img/selo_qualidade_premium.png" alt="Selo Premium">
+                <div class="selo_cat">
+                    <img src="../img/selo_cat3.png" alt="Selo Doguinho">
+                </div>
+                <div class="selo_cat2">
+                    <img src="../img/selo_dog3.png" alt="Selo Doguinho">
+                </div>
+            </div>
+            <div class="produto">
+                <h3>Comedouro e bebedouro para PET Rosa</h3>
+                <p1>Descrição: Acessório de extrema qualidade para o seu pet e beleza para sua residência! p</p1>
+                <br><br>
+                <p2 class="preco">R$ 47.50</p2>
+                <div class="adicionar_comprar">
+                    <button onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                    <form>
+                        <button id="buyNow" formaction="../html/carrinho.html" onclick="comprarAgora(event)">Comprar Agora!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="form">
+        <div class="prodList">
+            <label for="frete">Digite o CEP:</label>
+            <input type="text" id="frete">
+            <p4><button onclick="calcularFrete()">Calcular Frete</button></p4>
+            <p3 id="resultado-frete"></p3>
+        </div>
+    </div>
+
+
+    <section class="newsletter">
+        <h2>Inscreva-se em nossa Newsletter</h2>
+        <p>Receba as últimas ofertas e atualizações da nossa loja.</p>
+        <form>
+            <input type="email" placeholder="Seu e-mail">
+            <button>Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Minha Loja Online</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

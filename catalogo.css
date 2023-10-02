@@ -1,0 +1,256 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+* {
+    font-family: Poppins;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eef3a6;
+    padding: 20px;
+    color: #050505;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #050505;
+    text-decoration: none;
+}
+
+.header-itens {
+    display: flex;
+    justify-content: space-between;
+    justify-items: flex-end;
+    align-items: center;
+    width: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.cart,
+.user {
+    color: #050505;
+    text-decoration: none;
+}
+
+
+.cart {
+    position: relative;
+    /* Define o elemento pai como posição relativa */
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.circle.before {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    font-size: 16px;
+    border: solid red 1px;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    /* Define o contador como posição absoluta */
+    top: -5px;
+    /* Ajuste a posição vertical conforme necessário */
+    right: -5px;
+    /* Ajuste a posição horizontal conforme necessário */
+}
+
+.circle {
+    margin: 0;
+}
+
+section.destaques {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 0;
+    width: 300px;
+    height: auto;
+}
+
+.produto img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.produto h3 {
+    margin-top: 10px;
+}
+
+.preco {
+    font-weight: bold;
+    color: #e44d26;
+    margin: 10px 0;
+}
+
+.prodList button,
+.destaques button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.prodList button:hover,
+.destaques button:hover {
+    background-color: #333;
+}
+
+section.catalog-container {
+    display: flex;
+    background-color: #ccc;
+}
+
+.catalog {
+    width: 100%;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-header input {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 500px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.catalog-header button {
+    background-color: blue;
+    margin-right: 20px;
+    border-radius: 50px;
+    width: 200px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prodList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: burlywood;
+}
+
+.produto-catalogo {
+    background-color: antiquewhite;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    margin: 10px 10px;
+    height: auto;
+}
+
+.produto-catalogo img {
+    width: 200px;
+}
+
+section.newsletter {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section.newsletter h2 {
+    margin: 0;
+}
+
+section.newsletter p {
+    margin: 10px 0;
+}
+
+section.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+}
+
+section.newsletter button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section.newsletter button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

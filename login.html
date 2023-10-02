@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link href="../css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./index.html#2">Sobre nós</a></li>
+                    <li><a href="./index.html#3">Onde nos encontrar</a></li>
+                    <li><a href="./index.html#4">Contato</a></li>
+                    <li><a href="./catalogo.html">Produtos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-buttons">
+            <a href="./login.html" class="login-button">Login</a>
+            <a href="./cadastro.html" class="signup-button">Cadastre-se</a>
+        </div>
+
+        <p id="welcome-message" onclick="printLoggedInMessage(username)" style="display: none;"></p>
+    </header>
+
+    <div class="container">
+        <div class="animal-card" id="3">
+            <h3 style="color: #fff; font-weight: bold;">Onde nos encontrar :</h3>
+            <p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29351.28900298943!2d-46.94807662568361!3d-23.136923599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2f51d37959b5%3A0x9535d0b02864eb4c!2sDEBEA%20-%20Departamento%20do%20Bem%20Estar%20Animal!5e0!3m2!1spt-BR!2sbr!4v1685840081748!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+        <div class="form">
+            <h1 style="margin-bottom: 10px;">Informe seus dados</h1>
+            <h2>Login</h2>
+            <form>
+                <label for="username"></label>
+                <input placeholder="Usuário" type="text" id="username" name="username" required>
+                <label for="password"></label>
+                <input placeholder="Senha" type="password" id="password" name="password" required>
+                <form  onsubmit="loginUser(event)">
+                    <button class="formBtn" type="submit" formaction="./index.html" id="login-submit-button">Entrar</button>
+                </form>
+            </form>
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="../img/logo.png" width="200" alt="Logo" />
+    </div>
+    <p style="display: flex; justify-content: center;
+    font-family: 'Impact';
+    font-size: 50;
+    margin: 0;
+    color: #fff;">ADO.TE</p>
+
+    <section class="newsletter">
+        <h2>Inscreva-se em nossa Newsletter</h2>
+        <p>Receba as últimas ofertas e atualizações da nossa loja.</p>
+        <form>
+            <input type="email" placeholder="Seu e-mail">
+            <button>Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Adoção de Animais. Todos os direitos reservados</p>
+    </footer>
+    <script src="../js/user.js"></script>
+</body>
+
+</html>

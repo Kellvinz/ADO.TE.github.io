@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADO.TE</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../js/user.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="../img/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="#2">Sobre nós</a></li>
+          <li><a href="#3">Onde nos encontrar</a></li>
+          <li><a href="#4">Contato</a></li>
+          <li><a href="catalogo.html">Produtos</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-buttons">
+      <a href="./login.html" class="login-button">Login</a>
+      <a href="./cadastro.html" class="signup-button">Cadastre-se</a>
+    </div>
+
+    <p id="welcome-message" onclick="printLoggedInMessage()" style="display: none;"></p>
+  </header>
+
+  <div class="carousel">
+    <img src="../img/cachorros.png" alt="Imagem 1" class="active">
+  </div>
+
+  <main>
+    <section id="banner">
+      <h2 align="center">ADO.TE! <img src="../img/logo.png" width="25"></h2>
+    </section>
+    <div class="animal-card" id="2">
+      <img src="../img/cachorros.png" width="500" alt="Cachorro">
+      <br />
+      <h3>Sobre nós</h3>
+      <p>Bem-vindo à ADO.TE: O Paraíso das Rações e do Bem-Estar Animal
+
+        Nossa jornada começa com uma paixão profunda pelos nossos amigos peludos - aqueles companheiros de quatro patas
+        que trazem alegria inestimável às nossas vidas. Na ADO.TE, não somos apenas uma loja de vendas de rações, somos
+        defensores fervorosos do bem-estar animal. Estamos dedicados a proporcionar a seus amados animais de estimação a
+        melhor qualidade de vida possível por meio de uma alimentação saudável e equilibrada.
+        Compromisso com a Qualidade
+        Na ADO.TE, a qualidade é nossa prioridade número um. Selecionamos cuidadosamente cada produto em nossas
+        prateleiras, garantindo que cada ração e alimento para animais de estimação seja formulado com ingredientes de
+        alta qualidade. Trabalhamos com marcas que compartilham nosso compromisso com a nutrição animal e que se
+        esforçam para criar fórmulas que atendam às necessidades específicas de cada animal, desde cachorros e gatos até
+        aves e roedores.
+        Variedade para Todos os Paladares e Necessidades
+        Entendemos que cada animal é único, com gostos e necessidades distintas. É por isso que nossa loja oferece uma
+        ampla variedade de rações e alimentos para animais de estimação, desde opções hipoalergênicas até dietas
+        específicas para problemas de saúde, como diabetes ou alergias. Seja qual for o desafio alimentar que seu animal
+        de estimação enfrenta, nossa equipe está aqui para ajudá-lo a encontrar a opção certa.
+        Apoio Especializado
+        Nossos colaboradores não são apenas funcionários, são amantes de animais com profundo conhecimento em nutrição
+        animal. Eles estão disponíveis para responder a todas as suas perguntas e orientá-lo na escolha da melhor ração
+        para seu animal de estimação. Acreditamos que a educação é fundamental para garantir a saúde e a felicidade dos
+        animais de estimação, e estamos comprometidos em compartilhar nosso conhecimento com nossos clientes.
+        Responsabilidade Social e Ambiental
+        Na ADO.TE, nossa responsabilidade vai além dos nossos produtos. Estamos empenhados em causar um impacto positivo
+        na comunidade e no meio ambiente. Colaboramos com abrigos de animais locais, doando alimentos e suprimentos para
+        ajudar animais em situação de necessidade. Além disso, adotamos práticas de negócios sustentáveis, minimizando
+        nosso impacto ambiental sempre que possível.
+        Um Lugar para Amantes de Animais
+        Nossa loja não é apenas um lugar para comprar rações e alimentos para animais de estimação; é um espaço onde os
+        amantes de animais se reúnem. Realizamos eventos comunitários, workshops e palestras para promover a
+        conscientização sobre o bem-estar animal e compartilhar informações sobre cuidados responsáveis com os animais.
+        Na ADO.TE, não se trata apenas de vender rações; é sobre nutrir laços entre pessoas e seus animais de estimação,
+        garantindo que todos desfrutem de vidas saudáveis e felizes juntos. Estamos aqui para apoiar você em cada passo
+        da jornada com seu animal de estimação, porque quando se trata do bem-estar deles, não medimos esforços.
+        Visite-nos hoje e faça parte da nossa comunidade apaixonada pela nutrição e pelo bem-estar animal. Seus animais
+        de estimação merecem o melhor, e na ADO.TE, é o que oferecemos.</p>
+    </div>
+    <div class="animal-card" id="3">
+      <img src="../img/RACAO-EXEMPLOS.png" alt="Produtos">
+      <br />
+      <a style="color: #000;" href="./catalogo.html">
+        <h3>Produtos em destaque</h3>
+      </a>
+      <section class="destaques">
+        <div class="produto">
+          <h3 id="nome_prod">Produto 1</h3>
+          <img src="../img/ped15.png" alt="Produto 1">
+          <p>Descrição do Produto 1.</p>
+          <p class="preco">99.99</p>
+        </div>
+
+        <div class="produto">
+          <h3 id="nome_prod">Produto 2</h3>
+          <img src="../img/gold15.png" alt="Produto 2">
+          <p>Descrição do Produto 2.</p>
+          <p class="preco">149.99</p>
+        </div>
+
+        <div class="produto">
+          <h3 id="nome_prod">Produto 3</h3>
+          <img src="../img/mag15.png" alt="Produto 3">
+          <p>Descrição do Produto 3.</p>
+          <p class="preco">219.99</p>
+        </div>
+    </div>
+    </section>
+    <div class="animal-card" id="3">
+      <h3>Onde nos encontrar</h3>
+      <p><iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29351.28900298943!2d-46.94807662568361!3d-23.136923599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf2f51d37959b5%3A0x9535d0b02864eb4c!2sDEBEA%20-%20Departamento%20do%20Bem%20Estar%20Animal!5e0!3m2!1spt-BR!2sbr!4v1685840081748!5m2!1spt-BR!2sbr"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    </div>
+    <div class="animal-card" id="4">
+      <h3>Contato</h3>
+      <p>Caso você não tenha disponibilidade para nos trazer o animal resgatado, entre em contato com nossa equipe, para
+        fazermos a retirada do animal. Caso tenha alguma duvida sobre o processo de adoção, sinta-se a vontade para
+        tira-las atraves dos nosso contatos a baixo.
+      </p>
+      <p>Telefone: <a
+          href="https://wa.me/5511944947918?text=Ol%C3%A1,%20esse%20%C3%A9%20o%20contato%20da%20equipe%20ADO.TE,%20caso%20queira%20que%20resgatemos%20um%20animalzinho%20ou%20tirar%20d%C3%BAvidas.">11
+          94494-7918</a></p>
+      <p>E-mail: resgate@ado.te.com</p>
+      <p id="welcome-message" style="display: none;">Bem-vindo! Você está logado.</p>
+    </div>
+
+  </main>
+
+  <section class="newsletter">
+    <h2>Inscreva-se em nossa Newsletter</h2>
+    <p>Receba as últimas ofertas e atualizações da nossa loja.</p>
+    <form>
+      <input type="email" placeholder="Seu e-mail">
+      <button>Inscrever-se</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Adoção de Animais. Todos os direitos reservados</p>
+  </footer>
+</body>
+
+</html>

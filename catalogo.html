@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link href="../css/catalogo.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="../css/fontawesome/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img src="../img/logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./index.html#2">Sobre nós</a></li>
+                    <li><a href="./index.html#3">Onde nos encontrar</a></li>
+                    <li><a href="./index.html#4">Contato</a></li>
+                    <li><a href="./catalogo.html">Produtos</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        <div class="header-itens">
+            <a href="#" class="user"><i class="fa-solid fa-circle-user"
+                    style="cursor: pointer; text-decoration: none;"></i></a>
+            <a href="./carrinho.html" class="cart"><i class="fa-solid fa-cart-shopping"
+                    style="cursor: pointer; text-decoration: none;">
+                    <p class="circle"></p>
+                </i></a>
+        </div>
+    </header>
+
+    <div class="cartaz" style="display: flex; justify-content: space-between; padding: 20px; align-items: center;">
+        <img src="../img/magnus.png" alt="Magnus" width="200px" height="100%">
+        <img src="../img/RACAO-EXEMPLOS.png" alt="Produtos" width="auto">
+        <img src="../img/selo.png" alt="Pedigree" width="200px">
+    </div>
+
+    <hr>
+
+    <h2>Produtos em Destaque</h2>
+    <section class="destaques">
+        <div class="produto">
+            <h3 id="nome_prod">Ração Pedigree 15KG Sabor carne, frango e cereais para cachorros Adultos</h3>
+            <img src="../img/ped15.png" alt="Produto 1">
+            <p class="preco">R$99.99</p>
+            <form>
+                <button id="buyNow" formaction="../html/prod04.html" onclick="comprarAgora(event)">Comprar
+                    Agora!</button>
+            </form>
+            <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+            <h3 id="nome_prod">Ração Golden Formula 15KG para Cães adultos sabor Peru e Arroz</h3>
+            <img src="../img/gold15.png" alt="Produto 2">
+
+            <p class="preco">R$149.99</p>
+            <form>
+                <button id="buyNow" formaction="../html/prod02.html" onclick="comprarAgora(event)">Comprar
+                    Agora!</button>
+            </form>
+            <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+            <h3 id="nome_prod">Ração Magnus Super Premium 15KG Sabor Frango e Arroz</h3><br>
+            <img src="../img/mag15.png" alt="Produto 3">
+            <p class="preco">R$219.99</p>
+            <form>
+                <button id="buyNow" formaction="../html/prod03.html" onclick="comprarAgora(event)">Comprar
+                    Agora!</button>
+            </form>
+            <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="catalog-container">
+        <div class="catalog">
+            <div class="catalog-header">
+                <div class="search">
+                    <p style="font-weight: bold;">
+                        O que está procurando:
+                    </p><input type="search">
+                    <i class="fa fa-magnifying-glass"
+                        style="background-color:#FFFFFF; padding: 7px 10px;border-top-right-radius: 10px; border-bottom-right-radius: 10px;"></i>
+                </div>
+                <button>Ração</button>
+                <button>Petisco</button>
+                <button>Acessórios</button>
+                <button>Outros</button>
+            </div>
+
+            <div class="prodList">
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Sache Pedigree 100G Sabor Carne ao Molho</h3><br>
+                    <img src="../img/sache_c.png" alt="Petisco">
+                    <p class="preco">R$5.99</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod05.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Sachê sabor Frango para cachorros adultos</h3>
+                    <br>
+                    <img src="../img/sache_f.png" alt="Petisco">
+                    <p class="preco">R$5.99</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod08.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Mandaí Cat Premium 25KG Sabor Mix de Frango e Peixe</h3>
+                    <img src="../img/cat_mandai.png" alt="Ração">
+                    <p class="preco">R$149.99</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod07.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="comprarAgora(event)">Adicionar ao Carrinho</button>
+
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Pedigree 10KG Sabor carne, frango e cereais para cachorros Adultos</h3>
+                    <img src="../img/ped10.png" alt="Petisco">
+                    <p class="preco">R$61.99</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod06.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Sachê Primogato 100G Sabor Peru e Frango</h3><br>
+                    <img src="../img/sache_gato_1.png" alt="Petisco">
+                    <p class="preco">R$7.99</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod09.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Golden Gatos 10KG sabor Salmao para gatos castrados</h3>
+                    <img src="../img/goldgatos_catalogo.png" alt="Petisco">
+                    <p class="preco">R$115.35</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod01.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Pedigree 20KG Sabor Carne e Vegetais </h3><br>
+                    <img src="../img/dog20.png" alt="Petisco">
+                    <p class="preco">R$68.90</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod11.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Comedouro e bebedouro para PET Azul</h3><br>
+                    <img src="../img/comedouro.png" alt="Petisco">
+                    <p class="preco">R$47.50</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod13.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Chanin sabor carne, peixe e frango para gatos adultos</h3>
+                    <img src="../img/racao_chanin10.png" alt="Petisco">
+                    <p class="preco">R$89.25</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod10.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="produto produto-catalogo">
+                    <h3 id="nome_prod">Ração Golden 1KG sabor Frango para gatos filhotes</h3><br>
+                    <img src="../img/goldgoatofilhote1.png" alt="Petisco">
+                    <p class="preco">R$74.90</p>
+                    <form>
+                        <button id="buyNow" formaction="../html/prod12.html" onclick="comprarAgora(event)">Comprar
+                            Agora!</button>
+                    </form>
+                    <button id="addCart" onclick="adicionarAoCarrinho(event)">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Inscreva-se em nossa Newsletter</h2>
+        <p>Receba as últimas ofertas e atualizações da nossa loja.</p>
+        <form>
+            <input type="email" placeholder="Seu e-mail">
+            <button>Inscrever-se</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Adoção de Animais. Todos os direitos reservados</p>
+    </footer>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

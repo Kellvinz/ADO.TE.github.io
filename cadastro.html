@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Cadastro</title>
+  <link href="../css/cadastro.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="styleHome.css" rel="stylesheet" type="text/css" /> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+  <script src="../js/user.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="../img/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./index.html#2">Sobre nós</a></li>
+          <li><a href="./index.html#3">Onde nos encontrar</a></li>
+          <li><a href="./index.html#4">Contato</a></li>
+          <li><a href="./catalogo.html">Produtos</a></li>
+        </ul>
+
+      </nav>
+    </div>
+    <div class="header-buttons">
+      <a href="./login.html" class="login-button">Login</a>
+      <a href="./cadastro.html" class="signup-button">Cadastre-se</a>
+    </div>
+
+    <p id="welcome-message" onclick="printLoggedInMessage()" style="display: none;"></p>
+    <div class="overlay" id="overlay" style="display: none;"></div>
+  </header>
+
+  <h1 style="margin-bottom: 10px;">Informe seus dados</h1>
+  <div class="container">
+    <h2 style="font-weight: bold; color: #fff;">Cadastre-se</h2>
+    <div class="form">
+      <form action="./login.html" onsubmit="return verificarSenha()">
+        <input placeholder="Nome" type="text" id="name" required /><br />
+        <input placeholder="Email" type="email" id="email" required /><br />
+        <input placeholder="Senha" type="password" id="senha" required /><br />
+        <input placeholder="Confirmar senha" type="password" id="confirmarSenha" required /><br />
+        <button class="formBtn" type="submit">Cadastrar !</button>
+      </form>
+    </div>
+  </div>
+  <div class="image">
+    <img src="../img/logo.png" width="200" alt="Logo" />
+  </div>
+  <p style="display: flex; justify-content: center;
+  font-family: 'Impact';
+  font-size: 50;
+  margin: 0;
+  color: #fff;">ADO.TE</p>
+
+  <section class="newsletter">
+    <h2>Inscreva-se em nossa Newsletter</h2>
+    <p>Receba as últimas ofertas e atualizações da nossa loja.</p>
+    <form>
+      <input type="email" placeholder="Seu e-mail">
+      <button>Inscrever-se</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Adoção de Animais. Todos os direitos reservados</p>
+  </footer>
+
+</body>
+
+</html>

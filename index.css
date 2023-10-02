@@ -1,0 +1,253 @@
+/* style.css */
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+/* Reset de estilos padrão */
+body {
+  font-family: Poppins;
+  background: #0f0c29;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #eef3a6;
+  padding: 20px;
+  color: #050505;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #050505;
+  text-decoration: none;
+}
+
+main {
+  margin: 20px 300px;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.animal-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.animal-card img {
+  width: 800px;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #0f0c29;
+  color: #fdfbfb;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button,
+.signup-button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.welcome-message {
+  color: rgb(202, 74, 74);
+  margin-right: 0px;
+  margin-left: 1000px;
+  margin-top: 4px;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+.logout-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+section.newsletter {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section.newsletter h2 {
+  margin: 0;
+}
+
+section.newsletter p {
+  margin: 10px 0;
+}
+
+section.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+}
+
+section.newsletter button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+section.newsletter button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.produto {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  margin: 10px 10px;
+  width: 300px;
+  height: auto;
+}
+
+.produto img {
+  height: 200px;
+  width: 100px;
+
+}
+
+.produto h3 {
+  margin-top: 10px;
+}
+
+section.destaques {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.preco {
+  font-weight: bold;
+  color: #e44d26;
+  margin: 10px 0;
+}
+
+.prodList button,
+.destaques button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

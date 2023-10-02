@@ -1,0 +1,174 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #333;
+  font-size: 16px;
+  background: #0f0c29;
+  height: 100vh;
+  background: -webkit-linear-gradient(to right,
+      #24243e,
+      #302b63,
+      #0f0c29);
+  background: linear-gradient(to right,
+      #24243e,
+      #302b63,
+      #0f0c29);
+}
+
+header {
+  background-color: #eef3a6;
+  padding: 20px;
+  color: #050505;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.login-button,
+.signup-button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  background-color: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #050505;
+  text-decoration: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 50;
+}
+
+h1 {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+}
+
+.form input,
+.form textarea {
+  width: 600px;
+  outline: 0;
+  background: #f2f2f2;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+form {
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  display: inline;
+  text-align: center;
+}
+
+.formBtn {
+  outline: 0;
+  background: #3324be;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+}
+
+section.newsletter {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+section.newsletter h2 {
+  margin: 0;
+}
+
+section.newsletter p {
+  margin: 10px 0;
+}
+
+section.newsletter input[type="email"] {
+  padding: 10px;
+  width: 250px;
+}
+
+section.newsletter button {
+  background-color: #e44d26;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+section.newsletter button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}

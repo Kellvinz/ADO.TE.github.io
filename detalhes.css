@@ -1,0 +1,382 @@
+@import "https://fonts.googleapis.com/css?family=Poppins";
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #eef3a6;
+    padding: 20px;
+    color: #050505;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #050505;
+    text-decoration: none;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.cart,
+.user {
+    color: #050505;
+    text-decoration: none;
+}
+
+.cart::before,
+.user::before {
+    color: #050505;
+    text-decoration: none;
+}
+
+.cart {
+    position: relative;
+    /* Define o elemento pai como posição relativa */
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.circle.before {
+    display: flex;
+    justify-content: center;
+    justify-self: flex-end;
+    font-size: 16px;
+    border: solid red 1px;
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    /* Define o contador como posição absoluta */
+    top: -5px;
+    /* Ajuste a posição vertical conforme necessário */
+    right: -5px;
+    /* Ajuste a posição horizontal conforme necessário */
+}
+
+.circle {
+    margin: 0;
+}
+
+/* Estilos CSS */
+/* ... (código CSS anterior) ... */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Alterar para layout de coluna */
+    align-items: center;
+    margin: 25px;
+    /* Adicionado para espaçamento externo */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.selo {
+    padding: 20px;
+    max-width: 10%;
+    display: block;
+    /* Removendo espaço extra abaixo da imagem */
+    border: 0;
+    float: right;
+    /* Adicionar esta propriedade para posicionar a imagem à esquerda */
+}
+
+.selo_cat {
+    padding-top: 20px;
+    max-width: 100%;
+    display: block;
+    /* Removendo espaço extra abaixo da imagem */
+    border: 0;
+    float: right;
+    /* Adicionar esta propriedade para posicionar a imagem à esquerda */
+}
+
+.selo_cat2 {
+    padding-top: 20px;
+    max-width: 100%;
+    display: block;
+    /* Removendo espaço extra abaixo da imagem */
+    border: 0;
+    float: right;
+    /* Adicionar esta propriedade para posicionar a imagem à esquerda */
+}
+
+
+.info {
+    border: 1px solid #ccc;
+    padding: 50px;
+    text-align: center;
+    /* Centralizar conteúdo horizontalmente */
+    margin-bottom: 10px;
+    /* Adicionar espaço entre o nome do produto e a imagem */
+    align-items: left;
+}
+
+
+.info img {
+    max-width: 100%;
+    max-height: 600px;
+    display: block;
+    /* Removendo espaço extra abaixo da imagem */
+    border: 0;
+    float: left;
+    /* Adicionar esta propriedade para posicionar a imagem à esquerda */
+}
+
+.produto {
+    padding-left: 100px;
+    padding-right: 100px;
+    float: center;
+    text-align: left;
+    overflow: hidden;
+    /* Adicionar esta propriedade para corrigir o fluxo de layout */
+}
+
+
+.adicionar_comprar {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.adicionar_comprar button,
+.bt_compra button {
+    background-color: #e44d26;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.adicionar_comprar button:hover,
+.bt_compra button:hover {
+    color: #FFF;
+    background-color: #333;
+}
+
+/* CSS responsavel pelo frete */
+
+.form input,
+.form textarea {
+    outline: 0;
+    background: #f2f2f2;
+    width: 20%;
+    border: 0;
+    padding: 15px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.form {
+    display: inline;
+    text-align: left;
+}
+
+.formBtn {
+    outline: 0;
+    background: #3324be;
+    width: 140px;
+    height: 40px;
+    border: 0;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 15px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+/* Footers */
+
+section.newsletter {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+section.newsletter h2 {
+    margin: 0;
+}
+
+section.newsletter p {
+    margin: 10px 0;
+}
+
+section.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+}
+
+section.newsletter button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+section.newsletter button:hover {
+    background-color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+.produto h3 {
+    font-weight: 700;
+    color: #333;
+    font-size: 50px;
+    display: block;
+}
+
+.produto p1 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.produto p2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #ff7b00;
+}
+
+.prodList p3 {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 400;
+    color: #050505;
+}
+
+.prodLista p4 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.produto label,
+.produto input,
+.produto button {
+    font-weight: 400;
+    color: #FFF;
+}
+
+
+.prodList {
+    padding-left: 100px;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+.prodList button,
+.destaques button {
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prodList button:hover,
+.destaques button:hover {
+    background-color: #333;
+}
+
+
+
+/* CSS responsavel pela barra de pesquisa */
+section.catalog-container {
+    display: flex;
+    background-color: #ccc;
+}
+
+.catalog {
+    width: 100%;
+}
+
+.catalog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-header input {
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 500px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.catalog-header button {
+    background-color: blue;
+    margin-right: 20px;
+    border-radius: 50px;
+    width: 200px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
